@@ -4,4 +4,4 @@ services:
 before_install: 
   - docker build -t hjyzlo1 -f Dockerfile.dev .
 script: 
-  - docker run hjyzlo npm run test -- --coverage
+  - docker run hjyzlo1 npm run test -- --coverage
