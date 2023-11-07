@@ -1,12 +1,12 @@
-name: learn-github-actions
+name: testreact
 on: [push]
 jobs:
-  check-bats-version:
+  testreact:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+      - run: npm install 
+      - run: npm run test
